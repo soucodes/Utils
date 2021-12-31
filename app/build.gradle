@@ -47,9 +47,9 @@ dependencies {
 
 
     /* u can use from utils module locally */
-//    api project(path:':utils')
+    api project(path:':utils')
 
-//    implementation 'com.github.soucodes:utils:1.0'
+    implementation 'com.github.soucodes:utils:1.0.0'
 
 
 }

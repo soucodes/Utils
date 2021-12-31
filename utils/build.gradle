@@ -1,23 +1,24 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
-//    id 'maven-publish'
+    id 'maven-publish'
 }
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = "ntk.android.base"
-//                artifactId = 'baseActivity'
-//                version = version
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = "ntk.android.base"
+                artifactId = 'baseActivity'
+                version = version
+            }
+        }
+    }
+}
 
 android {
+
     compileSdk 31
 
     defaultConfig {
